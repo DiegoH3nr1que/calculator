@@ -4,6 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import PageCalculator from './PageCalculator';
 import HomePage from './HomePage';
+import PageNotePad from './PageNotepad';
 
 
 const Stack = createStackNavigator();
@@ -14,6 +15,7 @@ const App = () => {
       <Stack.Navigator initialRouteName="Home">
         <Stack.Screen name="Home" component={HomePage} />
         <Stack.Screen name="Calculadora" component={PageCalculator} />
+        <Stack.Screen name="NotePad" component={PageNotePad} />
       </Stack.Navigator>
     </NavigationContainer>
   );
